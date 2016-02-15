@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/TableLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp" >
+
+        <RadioButton
+            android:id="@+id/presentValue"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/presentValue" />
+
+        <EditText
+            android:id="@+id/txtPV"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:background="@android:drawable/edit_text"
+            android:inputType="phone"
+            android:maxLength="16" >
+        </EditText>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp" >
+
+        <RadioButton
+            android:id="@+id/futureValue"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/futureValue" />
+
+        <EditText
+            android:id="@+id/txtFV"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:background="@android:drawable/edit_text"
+            android:ems="10"
+            android:inputType="phone"
+            android:maxLength="16" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp" >
+
+        <RadioButton
+            android:id="@+id/period"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/n" />
+
+        <EditText
+            android:id="@+id/txtPeriod"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:background="@android:drawable/edit_text"
+            android:inputType="phone"
+            android:ems="10" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="@string/frequency"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/txtFrequency"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:background="@android:drawable/edit_text"
+            android:ems="10"
+            android:inputType="phone" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp" >
+
+        <RadioButton
+            android:id="@+id/rateReutrn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/annualizedReturn" />
+
+        <EditText
+            android:id="@+id/txtRateRtn"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:background="@android:drawable/edit_text"
+            android:ems="10"
+            android:inputType="phone" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/cumRateReutrn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cumulativeReturn" />
+
+        <EditText
+            android:id="@+id/txtCumRateRtn"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:background="@android:drawable/edit_text"
+            android:ems="10"
+            android:inputType="phone" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/calc"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/calc" />
+
+        <Button
+            android:id="@+id/clean"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/clean" />
+    </TableRow>
+
+</TableLayout>

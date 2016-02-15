@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp" >
+
+        <!--
+            <RadioButton
+            android:id="@+id/each_period"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="@string/radioEvent1"
+            android:text="@string/each_period" />
+        -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/each_period"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/txtEpd"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:background="@android:drawable/edit_text"
+            android:ems="8"
+            android:inputType="phone"
+            android:maxLength="16" >
+        </EditText>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp" >
+
+        <!--
+        <RadioButton
+            android:id="@+id/during_preiod"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="@string/radioEvent1"
+            android:text="@string/during_preiod" />
+        -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/during_preiod"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/txtDpd"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:background="@android:drawable/edit_text"
+            android:inputType="phone"
+            android:maxLength="16" >
+        </EditText>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp" >
+
+        <!--
+        <RadioButton
+            android:id="@+id/rate_return"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="@string/radioEvent1"
+            android:text="@string/annualizedReturn" />
+        -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/annualizedReturn"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/txtRate"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:background="@android:drawable/edit_text"
+            android:inputType="phone"
+            android:maxLength="16" >
+        </EditText>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp" >
+
+        <!--
+        <RadioButton
+            android:id="@+id/f_value"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="@string/radioEvent1"
+            android:text="@string/futureValue" />
+        -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/futureValue"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/txtFvalue"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:background="@android:drawable/edit_text"
+            android:inputType="phone"
+            android:maxLength="16" >
+        </EditText>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/calc"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/calc" />
+
+        <Button
+            android:id="@+id/clean"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/clean" />
+    </TableRow>
+
+</TableLayout>
